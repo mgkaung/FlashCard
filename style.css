@@ -1,0 +1,231 @@
+/* style.css */
+:root {
+    --bg-primary: #1e1e2e; /* Dark blue/purple - Catppuccin Macchiato Base */
+    --bg-secondary: #313244; /* Slightly lighter - Catppuccin Macchiato Surface0 */
+    --bg-tertiary: #45475a; /* Even lighter - Catppuccin Macchiato Surface1 */
+    --text-primary: #cad3f5; /* Light lavender - Catppuccin Macchiato Text */
+    --text-secondary: #a6adc8; /* Muted lavender - Catppuccin Macchiato Subtext0 */
+    --accent-primary: #89b4fa; /* Blue - Catppuccin Macchiato Blue */
+    --accent-secondary: #f5c2e7; /* Pink - Catppuccin Macchiato Pink */
+    --feedback-correct: #a6e3a1; /* Green - Catppuccin Macchiato Green */
+    --feedback-incorrect: #f38ba8; /* Red - Catppuccin Macchiato Red */
+    --border-color: #585b70; /* Muted border - Catppuccin Macchiato Overlay0 */
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    --font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif; /* Emoji font stack */
+
+    --shadow-color: rgba(0, 0, 0, 0.15);
+    --shadow-elevation-low: 0 1px 2px var(--shadow-color);
+    --shadow-elevation-medium: 0 2px 4px var(--shadow-color), 0 2px 8px var(--shadow-color);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    line-height: 1.6;
+}
+
+.app-container {
+    background-color: var(--bg-secondary);
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-elevation-medium);
+    width: 100%;
+    max-width: 750px; /* Max width for desktop */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between header, main, footer */
+}
+
+.app-header h1 {
+    color: var(--accent-secondary);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.mode-info-display {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.card-display-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pushes speak button to the right */
+    padding: 1rem;
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+    min-height: 100px;
+    box-shadow: var(--shadow-elevation-low);
+}
+
+.emoji {
+    font-family: var(--font-emoji);
+    font-size: 2.8rem; /* Slightly smaller for balance */
+    margin-right: 1rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.noun {
+    font-size: clamp(1.8rem, 5vw, 2.5rem); /* Responsive font size */
+    font-weight: bold;
+    color: var(--text-primary);
+    flex-grow: 1;
+    text-align: center;
+    word-break: break-word;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%; /* Make it circular */
+    transition: background-color 0.2s, color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px; /* Fixed size for circular button */
+    height: 44px;
+}
+.icon-btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--accent-primary);
+}
+.icon-btn:disabled {
+    color: var(--border-color);
+    cursor: not-allowed;
+    background: none;
+}
+
+
+.article-buttons-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive columns */
+    gap: 0.75rem;
+}
+
+.action-btn {
+    background-color: var(--accent-primary);
+    color: var(--bg-primary); /* Dark text on light accent for contrast */
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+    text-align: center;
+}
+.action-btn:hover {
+    background-color: var(--accent-secondary); /* Pink hover for all action buttons */
+    transform: translateY(-2px);
+}
+.action-btn:active {
+    transform: translateY(0);
+}
+.action-btn:disabled {
+    background-color: var(--bg-tertiary);
+    color: var(--border-color);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.feedback-area {
+    font-size: 1.2rem;
+    font-weight: bold;
+    min-height: 28px; /* Consistent height */
+    margin: 1rem 0;
+    text-align: center;
+    transition: color 0.3s;
+}
+.feedback-correct { color: var(--feedback-correct); }
+.feedback-incorrect { color: var(--feedback-incorrect); }
+
+.answer-details {
+    background-color: var(--bg-tertiary);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.7;
+    box-shadow: var(--shadow-elevation-low);
+}
+.answer-details h2 {
+    font-size: 1.1rem;
+    color: var(--accent-secondary);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+.answer-details p {
+    margin: 0.3rem 0;
+    color: var(--text-secondary);
+}
+.answer-details p strong { /* If you use <strong> in JS */
+    color: var(--text-primary);
+}
+
+
+.mode-controls,
+.controls {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.score-area {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* Minor adjustments for very small screens if needed */
+@media (max-width: 480px) {
+    .app-container {
+        padding: 1rem;
+    }
+    .app-header h1 {
+        font-size: 1.5rem;
+    }
+    .noun {
+        font-size: 1.5rem; /* Further reduce noun size */
+    }
+    .emoji {
+        font-size: 2.2rem;
+        margin-right: 0.5rem;
+    }
+    .action-btn {
+        font-size: 1rem;
+        padding: 0.7rem 0.8rem;
+    }
+    .article-buttons-section {
+        grid-template-columns: 1fr; /* Stack article buttons */
+    }
+}

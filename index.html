@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Noun Flashcards Deluxe</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+        Optional: Link to an external emoji font if system fonts are insufficient.
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet"> 
+    -->
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>German Noun Flashcards</h1>
+            <div id="mode-info" class="mode-info-display">Mode: Practicing All Cards</div>
+        </header>
+
+        <main class="app-main">
+            <section class="card-display-area" aria-live="polite" aria-atomic="true">
+                <div id="emoji-display" class="emoji" aria-hidden="true"></div>
+                <div id="noun-display" class="noun">Loading Noun...</div>
+                <button id="speak-button" class="speak-btn icon-btn" title="Pronounce Noun (Ctrl+P / Cmd+P)" aria-label="Pronounce Noun">🔊</button>
+            </section>
+
+            <section class="article-buttons-section">
+                <button data-article="der" id="btn-der" class="article-btn action-btn">der (1)</button>
+                <button data-article="die" id="btn-die" class="article-btn action-btn">die (2)</button>
+                <button data-article="das" id="btn-das" class="article-btn action-btn">das (3)</button>
+            </section>
+
+            <section id="feedback" class="feedback-area" aria-live="assertive"></section>
+
+            <section id="answer-details" class="answer-details" style="display: none;">
+                <h2>Answer Details:</h2>
+                <p id="correct-article">Correct: </p>
+                <p id="plural-form">Plural: </p>
+                <p id="english-meaning">Meaning: </p>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <div class="mode-controls">
+                <button id="btn-practice-all" class="mode-btn action-btn">Practice All Cards</button>
+                <button id="btn-practice-mistakes" class="mode-btn action-btn" disabled>Practice Mistakes (0)</button>
+            </div>
+            
+            <div class="controls">
+                <button id="btn-skip-next" class="control-btn action-btn">Skip / Next (Space)</button>
+            </div>
+
+            <div id="score" class="score-area" aria-live="polite">Score: 0/0</div>
+        </footer>
+    </div>
+
+    <script src="data.js"></script> 
+    <script src="script.js"></script>
+</body>
+</html>

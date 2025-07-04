@@ -1,289 +1,226 @@
 // data.js
 
 const ocr_text = `
-3
-Lernwortschatz
-eine Stadttour
-der Mensch, -en
-das Haus, "er
-das Rathaus, "er
-das Konzerthaus, "er
-die Kirche, -n
-das Fahrrad, er
-der Bus, -se
-die Straßenbahn, -en
-der Zug, e
-die U-Bahn, -en
-die S-Bahn, -en
-das Schiff, -e
-der Turm, e
-das Hotel, -s
-die Brücke, -n
-der Park, -s
-der Markt, e
-der Bahnhof, e
-der Hafen, -
-der See, -n
-der Fluss, e
-das Meer, -e
-sehen, er sieht (Da sieht
-man den Hafen.)
-da (Da ist das Hotel.)
-Das ist ...
-interessant
-schön
-die Station, -en
-der Ort, -e
-Maße angeben
-der Meter, -
-der Kilometer, -
-lang (Die Brücke ist
-12 Kilometer lang.)
-breit (Das Rathaus ist
-111 Meter breit.)
-hoch (Der Turm ist
-132 Meter hoch.)
-über (Das Haus ist über
-100 Jahre alt.)
-die Kosten (PL.)
-das Flugzeug, -e
-die Fahrkarte, -n
-schnell
-nach (Der Zug fährt nach
-Berlin.)
-einen Weg beschreiben
-der Weg, -e
-Wo ist bitte ...?
-Das ist ganz einfach.
-rechts
-links
-geradeaus
-Gehen Sie zuerst rechts
-und dann geradeaus.
-richtig (Ist das richtig?)
-genau (Ja, genau!)
-die Mitte (Sg.)
-Wo ist das? - Genau in der
-Mitte.
-also (Also, zuerst links
-und ...)
-zeigen
-der Plan, e
-zeichnen
-der Start (Sg.)
-das Ziel, -e
-schon (Da ist schon das
-Hotel.)
-der Euro, -s
-Verkehrsmittel
-zu Fuß gehen
-112 einhundertzwölf
-Events
-das Event, -s
-das Festival, -s
-das Ticket, -s
-das Publikum (Sg.)
-der Besucher, -
-die Besucherin, -nen
-der Gast, e
-das Konzert, -e
-das Orchester, -
-der Chor, e
-die Konzertkarte, -n
-der Film, -e
-der Schauspieler, -
-die Schauspielerin, -nen
-der Star, -s
-der Regisseur, -e
-die Regisseurin, -nen
-die Ausstellung, -en
-finden
-Findest du das Konzert
-gut?
-Jahreszeiten
-die Jahreszeit, -en
-der Frühling
-der Sommer
-der Herbst
-der Winter
-Monate
-der Monat, -e
-der Januar
-der Februar
-der März
-der April
-der Mai
-der Juni
-der Juli
-der August
-der September
-der Oktober
-der November
-der Dezember
+Lernwortschatz 5
+
+Alltag
+schlafen, er schläft
+duschen
+besuchen
+treffen, er trifft
+die Nachricht, -en
+die Uni, -s
+in die Uni/Schule fahren
+die Mensa, Mensen
+die Bibliothek, -en
+die Musikschule, -n
+die Hausaufgabe, -n
+die Zeitung, -en
+am Computer arbeiten
+die Homepage, -s
+der Stress (Sg.)
+
+Uhrzeit
+die Uhr, -en
+wie viel Uhr ist es?
+Wie spät ist es?
+Es ist vier Uhr.
+Es ist Viertel vor vier.
+Es ist Viertel nach vier.
+Es ist halb fünf.
+Es ist kurz vor vier.
+Es ist zehn nach vier.
+um (um drei Uhr)
+die Sekunde, -n
+die Minute, -n
+die Stunde, -n
+eine halbe Stunde
+die Verspätung, -en
+pünktlich
+zu spät kommen
+
+Familie
+die Familie, -n
+der/die Verwandte, -n
+das Baby, -s
+das Kind, -er
+der Junge, -n
+das Mädchen, -
+der Sohn, "e
+die Tochter, "
+die Mutter, "
+die Eltern (Pl.)
+der Bruder, "
+die Schwester, -n
+die Geschwister (Pl.)
+die Großmutter, "
+der Großvater, "
+der Opa, -s
+die Großeltern (Pl.)
+der Mann (mein Mann)
+die Frau (meine Frau)
+ledig
+verheiratet
+
+Termine und Verabredungen
+die Zeit, -en
+Hast du morgen Zeit?
+telefonieren
+Auf Wiederhören.
+am (am Montag)
+von ... bis (von Montag bis Freitag)
+können, er kann
+müssen, er muss
+wollen, er will
+die Party, -s
+eine Party machen
+die Bar, -s
+sitzen
+der Kalender, -
+die Besprechung, -en
+Was kann ich für Sie tun?
+
+Ich hätte gern einen Termin.
+Haben Sie am ... einen Termin frei?
+Geht es am ... um ...?
+Nein, das geht leider nicht.
+
 andere wichtige Wörter und Wendungen
-die Gruppe, -n
-das Bild, -er
-das Plakat, -e
-das Glück (Sg.)
-so (So ein Glück!)
-der Test, -s
-heute (Heute ist kein Test!)
-jetzt (Jetzt aber schnell!)
-okay
-die Welt, -en
-die Lösung, -en
-ein Mal, zwei Mal, ...
-das erste/zweite/... Mal
-Vielen Dank!
-Wichtig für mich:
-Welche Verkehrsmittel benutzen Sie? Notieren Sie.
-Wie heißen die Wörter? Schreiben Sie die Wörter mit Artikel.
-1. Park
-4. Fluss
-5. maus
-2. IνιαΓκι
-3. втиске
-6. GLUCK
-einhundertdreizehn 113
-4
-Lernwortschatz
-Lebensmittel
-Obst
-das Obst (Sg.)
-der Apfel, "
-die Banane, -n
-die Birne, -n
-Gemüse
-das Gemüse (Sg.)
-die Gurke, -n
-die Kartoffel, -n
-der Salat, -e
-die Tomate, -n
-die Olive, -n
-die Zwiebel, -n
-Backwaren
-das Brot, -e
-das Brötchen, -
-der Keks, -e
-der Kuchen, -
-Fleischprodukte
-das Fleisch (Sg.)
-der Fisch, -e
-die Schokolade, -n
-die Marmelade, -n
-das Müsli, -s
-Getränke
-das Getränk, -e
-das Wasser, -
-der Saft, e
-die Limonade, -n
-die Cola, -s
-der Kaffee, -s
-der Tee, -s
-Geschäfte
-die Bäckerei, -en
-der Markt, =
-die Metzgerei, -en
-der Supermarkt, e
-Packungen und Maße
-das Hähnchen, -
-die Packung, -en
-der Schinken, -
-der Becher, -
-die Wurst, e
-die Dose, -n
-das Würstchen, -
-das Stück, -e
-Milchprodukte
-die Tüte, -n
-die Butter (Sg.)
-das Gramm (g)
-der/das Joghurt, -s
-das Kilo(gramm) (kg)
-der Käse (Sg.)
-der Liter (l)
-die Milch (Sg.)
-die Sahne (Sg.)
-andere Lebensmittel
-der Pfeffer (Sg.)
-das Salz, -e
-der Zucker (Sg.)
-der Essig, -e
-das Öl, -e
-die Nudel, -n
-der Reis (Sg.)
-das Ei, -er
-128 einhundertachtundzwanzig
-beim Einkaufen
-kaufen
-ein kaufen
-der Einkaufswagen, -
-brauchen
-möchten, er möchte
-finden
-Entschuldigung, wo finde
-ich ...?
-Wo gibt es ...?
-kosten
-der Preis, -e
-Das macht ... Euro, bitte.
-der Kassenzettel, -
-teuer
-wechseln
-Können Sie wechseln,
-bitte?
-beim Essen
-Guten Appetit!
-Danke, gleichfalls.
-das Essen, -
-essen, er isst
-trinken
-fertig (Das Essen ist gleich
-fertig.)
-mögen, er mag
-nehmen, er nimmt
-schmecken (Schmeckt's?)
-lecker
-süß
-frisch
-Mahlzeiten
-das Frühstück, -e
-frühstücken
-das Mittagessen, -
-das Abendessen, -
-Gerichte
-das Gericht, -e
-die Suppe, -n
-die Pizza, -s/Pizzen
-die Pommes frites (Pl.)
-Tageszeiten
-der Morgen, -
-morgens
-der Mittag, -e
-mittags
-der Nachmittag, -e
-nachmittags
-der Abend, -e
-abends
-die Nacht, "e
-nachts
+krank
+der Sport (Sg.)
+der Ball, "e
+das Motorrad, "er
+die Geige, -n
+Geige spielen
+das Saxofon, -e
+die Trompete, -n
+der Hund, -e
+süß (Euer Hund ist so süß.)
+die Idee, -n
+Gute Idee!
+liebe Grüße
+willkommen
+cool
+falsch
+das Problem, -e
+die Praxis, Praxen
+schade
+tut mir leid.
+Bitte entschuldigen Sie.
+Macht nichts.
+
+Lernwortschatz 6
+
+Freizeitaktivitäten
+ins Fitness-Studio gehen
+klettern
+Ski fahren
+wandern
+der Ausflug, "e
+einen Ausflug machen
+die Fahrradtour, -en
+das Picknick, -s
+
+Feste/Partys
+das Fest, -e
+feiern
+der Geburtstag, -e
+werden, er wird (Sie wird 30 Jahre alt.)
+schenken
+das Geschenk, -e
+einladen
+das Datum (Sg.)
+die Überraschung, -en
+Achtung!
+wissen, er weiß (Achtung, sie weiß nichts.)
+mit|bringen
+Spaß haben
+hoffentlich (Hoffentlich kommt ihr.)
+
+eine Mail schreiben
+die Mail, -s
+schicken
+der Betreff, -e
+die Anrede, -n
+herzliche Grüße
+
+Speisen und Getränke
+die Schorle, -n
+das Eis (Sg.)
+die Salami, -s
+das Schnitzel, -
+die Tomatensuppe, -n
+der Sandwich, -s
+
+bestellen und bezahlen
+der Durst (Sg.)
+der Hunger (Sg.)
+die Speisekarte, -n
+die Bestellung, -en
+bestellen
+bringen
+Für wen ist ...?
+bezahlen
+zahlen (Zahlen, bitte.)
+die Rechnung, -en
+Zusammen oder getrennt?
+das Trinkgeld (Sg.)
+geben, er gibt
+Stimmt so.
+
+Auf dem Tisch
+die Gabel, -n
+das Messer, -
+der Löffel, -
+das Glas, "er
+die Tasse, -n
+der Teller, -
+die Serviette, -n
+
+Lokale
+die Kneipe, -n
+das Kaffeehaus, "er
+der Biergarten, "
+die Bank, "e
+die Selbstbedienung (Sg.)
+geöffnet
+draußen (Man kann draußen sitzen.)
+
+Veranstaltungen
+das Programm, -e
+los sein (Was ist los?)
+(keine) Lust haben
+mit|kommen
+der Treffpunkt, -e
+der Eintritt, -e
+die Anmeldung, -en
+beginnen
+enden
+die Karte, -n
+
 andere wichtige Wörter und Wendungen
-die Einladung, -en
-nett
-gesund
-waschen, er wäscht
-schneiden
-grillen
-probieren
-die Kantine, -n
-wenig
-vielleicht
-wichtig
-Wichtig für mich:
-Schreiben Sie einen Einkaufszettel für ein Grillfest mit Freunden.
-Salat, ...
-...
-Welche Lebensmittel, Gerichte und Getränke mögen Sie? Markieren Sie in der Liste.
+ab|holen
+an|fangen, er fängt an
+an|rufen
+auf|hören
+mit|machen
+glauben
+laufen, er läuft
+genießen
+passieren
+zu Hause
+kalt
+warm
+wieder
+typisch
+verboten
+überall
+besonders (Was ist besonders?)
+der Spielplatz, "e
+früh
+Alles klar?
+Wann denn?
+Klingt gut.
 `;
 
 const GERMAN_TO_ENGLISH = {
@@ -333,8 +270,32 @@ const GERMAN_TO_ENGLISH = {
     "Gericht": "dish (food); court (law)", "Suppe": "soup", "Pizza": "pizza",
     "Pommes frites": "french fries", "Morgen": "morning; tomorrow", "Mittag": "midday, noon",
     "Nachmittag": "afternoon", "Abend": "evening", "Nacht": "night",
-    "Einladung": "invitation", "Kantine": "canteen, cafeteria"
-    // REVIEW AND COMPLETE THIS DICTIONARY!
+    "Einladung": "invitation", "Kantine": "canteen, cafeteria",
+    // New Vocab from Chapter 5 & 6
+    "Nachricht": "message, news", "Uni": "university", "Mensa": "canteen, refectory",
+    "Bibliothek": "library", "Musikschule": "music school", "Hausaufgabe": "homework",
+    "Zeitung": "newspaper", "Homepage": "homepage", "Stress": "stress",
+    "Uhr": "clock, watch, o'clock", "Sekunde": "second", "Minute": "minute", "Stunde": "hour",
+    "Verspätung": "delay, lateness", "Familie": "family", "Verwandte": "relative", "Baby": "baby",
+    "Kind": "child", "Junge": "boy", "Mädchen": "girl", "Sohn": "son", "Tochter": "daughter",
+    "Mutter": "mother", "Eltern": "parents", "Bruder": "brother", "Schwester": "sister",
+    "Geschwister": "siblings", "Großmutter": "grandmother", "Großvater": "grandfather",
+    "Opa": "grandpa", "Großeltern": "grandparents", "Mann": "man, husband", "Frau": "woman, wife",
+    "Zeit": "time", "Party": "party", "Bar": "bar", "Kalender": "calendar", "Besprechung": "meeting",
+    "Sport": "sport", "Ball": "ball", "Motorrad": "motorcycle", "Geige": "violin", "Saxofon": "saxophone",
+    "Trompete": "trumpet", "Hund": "dog", "Idee": "idea", "Problem": "problem", "Praxis": "practice (doctor's office)",
+    "Ausflug": "trip, excursion", "Fahrradtour": "bike tour", "Picknick": "picnic", "Fest": "party, festival",
+    "Geburtstag": "birthday", "Geschenk": "gift, present", "Datum": "date", "Überraschung": "surprise",
+    "Mail": "email", "Betreff": "subject (of email)", "Anrede": "salutation, form of address",
+    "Schorle": "spritzer (juice mixed with sparkling water)", "Eis": "ice, ice cream", "Salami": "salami",
+    "Schnitzel": "schnitzel", "Tomatensuppe": "tomato soup", "Sandwich": "sandwich",
+    "Durst": "thirst", "Hunger": "hunger", "Speisekarte": "menu", "Bestellung": "order",
+    "Rechnung": "bill, invoice", "Trinkgeld": "tip, gratuity", "Gabel": "fork", "Messer": "knife",
+    "Löffel": "spoon", "Glas": "glass", "Tasse": "cup", "Teller": "plate", "Serviette": "napkin",
+    "Kneipe": "pub, bar", "Kaffeehaus": "coffee house", "Biergarten": "beer garden", "Bank": "bench",
+    "Selbstbedienung": "self-service", "Programm": "program", "Treffpunkt": "meeting point",
+    "Eintritt": "admission, entry", "Anmeldung": "registration", "Karte": "card, ticket, map",
+    "Spielplatz": "playground"
 };
 
 const NOUN_TO_EMOJI = {
@@ -376,8 +337,27 @@ const NOUN_TO_EMOJI = {
     "Essen": "🍽️", "Frühstück": "🥞", "Mittagessen": "🥪", "Abendessen": "🍝",
     "Gericht": "🍲", "Suppe": "🥣", "Pizza": "🍕", "Pommes frites": "🍟",
     "Morgen": "🌅", "Mittag": "☀️", "Nachmittag": "🌇", "Abend": "🌃", "Nacht": "🌙",
-    "Einladung": "✉️", "Kantine": "🍽️"
-    // REVIEW AND COMPLETE THIS DICTIONARY!
+    "Einladung": "✉️", "Kantine": "🍽️",
+    // New Emojis from Chapter 5 & 6
+    "Nachricht": "💬", "Uni": "🎓", "Mensa": "🍽️", "Bibliothek": "📚", "Musikschule": "🎼",
+    "Hausaufgabe": "✍️", "Zeitung": "📰", "Homepage": "🌐", "Stress": "🤯",
+    "Uhr": "⏰", "Sekunde": "⏱️", "Minute": "⏱️", "Stunde": "⏳", "Verspätung": "🏃‍♂️💨",
+    "Familie": "👨‍👩‍👧‍👦", "Verwandte": "👨‍👩‍👧‍👦", "Baby": "👶", "Kind": "🧒", "Junge": "👦",
+    "Mädchen": "👧", "Sohn": "👦", "Tochter": "👧", "Mutter": "👩", "Eltern": "👨‍👩‍👧",
+    "Bruder": "👨‍👦", "Schwester": "👩‍👧", "Geschwister": "👧👦", "Großmutter": "👵", "Großvater": "👴",
+    "Opa": "👴", "Großeltern": "👵👴", "Mann": "👨", "Frau": "👩",
+    "Zeit": "⏳", "Party": "🎉", "Bar": "🍸", "Kalender": "📅", "Besprechung": "🗣️",
+    "Sport": "⚽", "Ball": "⚽", "Motorrad": "🏍️", "Geige": "🎻", "Saxofon": "🎷",
+    "Trompete": "🎺", "Hund": "🐕", "Idee": "💡", "Problem": "🤔", "Praxis": "⚕️",
+    "Ausflug": "🏞️", "Fahrradtour": "🚴‍♀️", "Picknick": "🧺", "Fest": "🥳", "Geburtstag": "🎂",
+    "Geschenk": "🎁", "Datum": "🗓️", "Überraschung": "😮", "Mail": "📧", "Betreff": "ር",
+    "Anrede": "👋", "Schorle": "🥤", "Eis": "🍦", "Salami": "🍕",
+    "Schnitzel": "🍖", "Tomatensuppe": "🥣", "Sandwich": "🥪", "Durst": "💧", "Hunger": "😋",
+    "Speisekarte": "📜", "Bestellung": "🛍️", "Rechnung": "🧾", "Trinkgeld": "💰",
+    "Gabel": "🍴", "Messer": "🔪", "Löffel": "🥄", "Glas": "🥛", "Tasse": "☕",
+    "Teller": "🍽️", "Serviette": "🧻", "Kneipe": "🍻", "Kaffeehaus": "☕", "Biergarten": "🍺🌳",
+    "Bank": "🏦", "Selbstbedienung": "🙋‍♂️", "Programm": "💻", "Treffpunkt": "📍",
+    "Eintritt": "🎟️", "Anmeldung": "📝", "Karte": "🃏", "Spielplatz": "🎠"
 };
 
 

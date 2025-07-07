@@ -207,44 +207,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function handleSkipNext() {
-        if (!currentCardData && currentCardIndex >= flashcardsToPractice.length -1) { // At end of round
-             // Default to "all" mode if "Start New Round?" is clicked after summary
-            startPracticeMode("all");
-            return;
-        }
-
-        if (!revealed && currentCardData) { // Skipping current card
-            feedbackEl.textContent = "Skipped.";
-            feedbackEl.className = 'feedback-area';
-            
-            if (currentPracticeMode === "all") {
-                mistakenCards[currentCardData.id] = currentCardData;
-                updateMistakesButton();
-            }
-
-            correctArticleEl.textContent = `Answer: ${currentCardData.full_info_german}`;
-            let pluralDisplay = currentCardData.noun_base_for_lookup;
-            if (currentCardData.plural_form_raw && currentCardData.plural_form_raw !== "-" && 
-                !currentCardData.plural_form_raw.startsWith("(")) {
-                pluralDisplay += currentCardData.plural_form_raw;
-            } else if (currentCardData.plural_form_raw.startsWith("(")) {
-                pluralDisplay = `${currentCardData.noun_base_for_lookup} ${currentCardData.plural_form_raw}`;
-            } else {
-                 pluralDisplay = `${currentCardData.noun_base_for_lookup} (Plural: ${currentCardData.plural_form_raw || 'not specified'})`;
-            }
-            pluralFormEl.textContent = `Plural: ${pluralDisplay}`;
-            englishMeaningEl.textContent = `Meaning: ${currentCardData.english_meaning}`;
-            emojiDisplay.textContent = currentCardData.emoji || ''; // Also show emoji on skip
-
-            answerDetailsEl.style.display = 'block';
-            revealed = true;
-            enableArticleButtons(false);
-            btnSkipNext.textContent = "Next Card (Space)";
-            btnSkipNext.disabled = false;
-        } else { // Moving to next card
-            showNextCard();
-        }
+    if (!currentCardData && currentCardIndex >= flashcardsToPractice.length - 1) { // At end of round
+        // Default to "all" mode if "Start New Round?" is clicked after summary
+        startPracticeMode("all");
+        return; // <-- This is the fix
     }
+
+    if (!revealed && currentCardData) { // Skipping current card
+        feedbackEl.textContent = "Skipped.";
+        feedbackEl.className = 'feedback-area';
+
+        if (currentPracticeMode === "all") {
+            mistakenCards[currentCardData.id] = currentCardData;
+            updateMistakesButton();
+        }
+
+        correctArticleEl.textContent = `Answer: ${currentCardData.full_info_german}`;
+        let pluralDisplay = currentCardData.noun_base_for_lookup;
+        if (currentCardData.plural_form_raw && currentCardData.plural_form_raw !== "-" &&
+            !currentCardData.plural_form_raw.startsWith("(")) {
+            pluralDisplay += currentCardData.plural_form_raw;
+        } else if (currentCardData.plural_form_raw.startsWith("(")) {
+            pluralDisplay = `${currentCardData.noun_base_for_lookup} ${currentCardData.plural_form_raw}`;
+        } else {
+            pluralDisplay = `${currentCardData.noun_base_for_lookup} (Plural: ${currentCardData.plural_form_raw || 'not specified'})`;
+        }
+        pluralFormEl.textContent = `Plural: ${pluralDisplay}`;
+        englishMeaningEl.textContent = `Meaning: ${currentCardData.english_meaning}`;
+        emojiDisplay.textContent = currentCardData.emoji || ''; // Also show emoji on skip
+
+        answerDetailsEl.style.display = 'block';
+        revealed = true;
+        enableArticleButtons(false);
+        btnSkipNext.textContent = "Next Card (Space)";
+        btnSkipNext.disabled = false;
+    } else { // Moving to next card
+        showNextCard();
+    }
+}
 
     function updateScoreDisplay() {
         scoreEl.textContent = `Score: ${score}/${attemptedInRound}`;
